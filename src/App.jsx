@@ -59,8 +59,9 @@ import "./App.css";
     }, 0);
 
   return (
+    <div className="ming-h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('./images/ecommerce.jpg')"}}>  
     <div className="min-h-screen flex flex-col items-center justify-center pb-40 px-4">
-      <h1 className="text-3xl font-bold mb-6">🧙 Tienda Mágica</h1>
+      <h1 className="text-3xl font-bold mb-6 text-white">🧙 Tienda Mágica</h1>
       <div className="w-full flex flex-col items-center justify-center mb-6">
 
       <div className="bg-white p-4 rounded-lg shadow-md w-full max-w-3xl flex flex-col items-center gap-4">
@@ -122,8 +123,9 @@ import "./App.css";
           </div>
         ))}
       </div>
-      <Footer />
     </div>
+    <Footer />
+  </div>
   );
 }
 
