@@ -87,7 +87,7 @@ import "./App.css";
     )}
 
     <button
-      className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 font-semibold rounded disabled:opacity-80"
+      className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 font-semibold rounded disabled:opacity-80 cursor-pointer"
       onClick={handlePurchase}
       disabled={Object.keys(cart).length === 0}
     >
@@ -106,14 +106,14 @@ import "./App.css";
             <p className="text-sm mb-2 font-semibold">📦 Stock: {product.stock}</p>
             <div className="flex gap-2">
               <button
-                className="bg-green-400 hover:bg-green-700 text-white px-2 py-1 rounded disabled:opacity-60"
+                className="bg-green-600 hover:bg-green-700 text-white font-semibold px-2 py-1 rounded disabled:opacity-60 cursor-pointer"
                 onClick={() => addToCart(product.id)}
                 disabled={product.stock === 0}
               >
                 Agregar
               </button>
               <button
-                className="bg-red-400 hover:bg-red-800 text-white px-2 py-1 rounded disabled:opacity-80"
+                className="bg-red-600 hover:bg-red-700 text-white font-semibold px-2 py-1 rounded disabled:opacity-80 cursor-pointer"
                 onClick={() => removeFromCart(product.id)}
                 disabled={!cart[product.id]}
               >
